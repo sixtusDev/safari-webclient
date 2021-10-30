@@ -10,20 +10,24 @@ const Header = () => {
   return (
     <header className="Header">
       <nav className="Header__nav">
-        <span className="Header__nav-link">Home</span>
+        <span className="Header__nav-link active">Home</span>
         <span className="Header__nav-link">Clothes</span>
         <span className="Header__nav-link">Shoes</span>
         <span className="Header__nav-link">Accesories</span>
       </nav>
-      <img src={logo} alt="company logo" />
+      <img className="Header__logo" src={logo} alt="company logo" />
       <div className="Header__cta">
         <div className="Header__search">
-          <input type="text" className="Header__search-input" />
+          <input
+            type="text"
+            className="Header__search-input"
+            placeholder="Search..."
+          />
           <img src={searchIcon} alt="search icon" />
         </div>
-        <img src={profileIcon} alt="heart" />
-        <img src={cartIcon} alt="heart" />
-        <img src={heartIcon} alt="heart" />
+        <img className="Header__cta-icon" src={profileIcon} alt="heart" />
+        <img className="Header__cta-icon" src={cartIcon} alt="heart" />
+        <img className="Header__cta-icon" src={heartIcon} alt="heart" />
       </div>
     </header>
   );
