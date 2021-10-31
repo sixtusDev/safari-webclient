@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.align-center {
+.align-items-center {
   align-items: center;
 }
 
@@ -22,11 +22,15 @@
   justify-content: space-around;
 }
 
-.flex-end {
+.justify-contents-center {
+  justify-content: flex-end;
+}
+
+.align-items-end {
   align-items: flex-end;
 }
 
-.flex-start {
+.align-items-start {
   align-items: flex-start;
 }
 
@@ -80,4 +84,9 @@
 
 .center {
   text-align: center;
+}
+
+.container {
+  max-width: 125rem;
+  margin: 0 auto;
 }

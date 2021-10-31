@@ -1,10 +1,19 @@
-import { Divider } from "antd";
+import { Row, Col } from "antd";
 import AppCarousel from "../../components/app-carousel/AppCarousel";
+import AppCard from "../../components/app-card/AppCard";
 import arrowDownIcon from "../../assets/arrow-down-icon.svg";
+import cloth1 from "../../assets/cloth1.png";
 
 import "./Home.scss";
 
 const Home = () => {
+  const items = [
+    {
+      name: "Multicolored armless top",
+      price: "₦10,000",
+      image: cloth1,
+    },
+  ];
   return (
     <div className="Home">
       <section className="Hero">
@@ -17,7 +26,7 @@ const Home = () => {
         </div>
       </section>
       <section className="Intro">
-        <div className="flex-row space-between align-center mb20">
+        <div className="flex-row space-between align-items-center mb20">
           <div className="Intro__line" />
           <span className="heading1">Shop your style</span>
           <div className="Intro__line" />
@@ -28,6 +37,22 @@ const Home = () => {
           lorem in erat. Et et molestie diam diam ultricies. Scelerisque duis
           diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
           adipiscing id facilisis.
+        </div>
+      </section>
+      <section className="Products">
+        <div className="container">
+          <Row>
+            <Col span={6}>
+              <AppCard
+                name="Multicolored armless top"
+                price="₦10,000"
+                image={cloth1}
+              />
+            </Col>
+            <Col span={6}></Col>
+            <Col span={6}></Col>
+            <Col span={6}></Col>
+          </Row>
         </div>
       </section>
     </div>

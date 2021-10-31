@@ -26,6 +26,7 @@
 
 .Intro {
   padding: 5rem 0;
+
   &__line {
     height: 1px;
     width: 30%;
@@ -36,4 +37,8 @@
     max-width: 110rem;
     margin: 0 auto;
   }
+}
+
+.Products {
+  padding-bottom: 30rem;
 }
