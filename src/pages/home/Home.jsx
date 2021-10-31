@@ -1,19 +1,12 @@
 import { Row, Col } from "antd";
+import items from "../../helpers/items";
 import AppCarousel from "../../components/app-carousel/AppCarousel";
 import AppCard from "../../components/app-card/AppCard";
 import arrowDownIcon from "../../assets/arrow-down-icon.svg";
-import cloth1 from "../../assets/cloth1.png";
 
 import "./Home.scss";
 
 const Home = () => {
-  const items = [
-    {
-      name: "Multicolored armless top",
-      price: "₦10,000",
-      image: cloth1,
-    },
-  ];
   return (
     <div className="Home">
       <section className="Hero">
@@ -41,17 +34,19 @@ const Home = () => {
       </section>
       <section className="Products">
         <div className="container">
-          <Row>
-            <Col span={6}>
-              <AppCard
-                name="Multicolored armless top"
-                price="₦10,000"
-                image={cloth1}
-              />
-            </Col>
+          <Row gutter={30}>
+            {items.map((item) => (
+              <Col span={6} className="mb30">
+                <AppCard
+                  name="Multicolored armless top"
+                  price="₦10,000"
+                  image={item.image}
+                />
+              </Col>
+            ))}
+            {/* <Col span={6}></Col>
             <Col span={6}></Col>
-            <Col span={6}></Col>
-            <Col span={6}></Col>
+            <Col span={6}></Col> */}
           </Row>
         </div>
       </section>

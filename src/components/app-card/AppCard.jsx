@@ -7,9 +7,11 @@ import "./AppCard.scss";
 const AppCard = ({ name, price, image }) => {
   return (
     <div className="AppCard">
-      <div className="flex-column align-items-center">
-        <div className="AppCard__image-wrapper mb20">
-          <Image className="AppCard__image" src={image} preview={false} />
+      <div className="">
+        <div className="flex-column align-items-center AppCard__image-wrapper mb20">
+          <div>
+            <Image className="AppCard__image" src={image} preview={false} />
+          </div>
           <div className="AppCard__cta">
             <img className="icon" src={heart} alt="heart icon" />
             <div className="AppCard__button">
