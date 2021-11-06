@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import searchIcon from "../../assets/search-icon.svg";
 import profileIcon from "../../assets/profile-icon.svg";
@@ -11,7 +12,10 @@ const Header = () => {
     <header className="Header">
       <nav className="Header__nav">
         <span className="Header__nav-link active">Home</span>
-        <span className="Header__nav-link">Clothes</span>
+
+        <span className="Header__nav-link">
+          <Link to="/clothes">Clothes</Link>
+        </span>
         <span className="Header__nav-link">Shoes</span>
         <span className="Header__nav-link">Accesories</span>
       </nav>
