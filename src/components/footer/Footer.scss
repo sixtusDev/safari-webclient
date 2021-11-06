@@ -1,0 +1,55 @@
+.Footer {
+  background-color: var(--light-grey1);
+  padding: 6rem 0;
+
+  &__logo {
+    height: 6rem;
+  }
+
+  &__links {
+    > span:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__img-wrapper {
+    width: 30px;
+  }
+
+  &__newsletter {
+    position: relative;
+  }
+
+  &__input {
+    height: 4rem;
+    border: 2px solid var(--app-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 0 0 2px;
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+      color: var(--black);
+      font-size: 1.5rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    height: 4rem;
+    background-color: var(--app-color);
+    padding: 0 2rem;
+    border: none;
+    outline: none;
+    color: var(--white);
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
