@@ -37,3 +37,10 @@ body {
   background: #5b6777;
   border-radius: 100px;
 }
+
+// Overrides
+.ant-checkbox-inner {
+  width: 2.7rem !important;
+  height: 2.7rem !important;
+  border: 0.5px solid #000000 !important;
+}

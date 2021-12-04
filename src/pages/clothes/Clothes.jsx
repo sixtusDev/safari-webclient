@@ -1,6 +1,9 @@
 import { Row, Col, Select } from "antd";
 import items from "../../helpers/items";
 import AppCard from "../../components/app-card/AppCard";
+import Category from "../../components/category/Category";
+import ClearBtn from "../../components/clear-btn/ClearBtn";
+import { clothCategories, clothSizes, colors } from "../../helpers";
 
 import "./Clothes.scss";
 
@@ -12,11 +15,36 @@ const Clothes = () => {
 
         <Row gutter={20} align="top">
           <Col span={6}>
-            <div className="flex-row" style={{ height: "4rem" }}>
-              <h3 className="heading3">CATEGORY</h3>
+            <div>
+              <div className="flex-row" style={{ height: "4rem" }}>
+                <h3 className="heading3">CATEGORY</h3>
+              </div>
+              <hr />
+              <Category list={clothCategories} category />
             </div>
             <div>
+              <div className="flex-row space-between align-items-center mt30">
+                <h3 className="heading3">SIZE</h3>
+                <ClearBtn />
+              </div>
               <hr />
+              <Category list={clothSizes} size />
+            </div>
+            <div>
+              <div className="flex-row space-between align-items-center mt30">
+                <h3 className="heading3">COLOR</h3>
+                <ClearBtn />
+              </div>
+              <hr />
+              <Category list={colors} color />
+            </div>
+            <div>
+              <div className="flex-row space-between align-items-center mt30">
+                <h3 className="heading3">COLOR</h3>
+                <ClearBtn />
+              </div>
+              <hr />
+              <Category price />
             </div>
           </Col>
           <Col span={18}>

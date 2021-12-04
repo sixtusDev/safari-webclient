@@ -1,0 +1,43 @@
+.Filter {
+  margin-top: 2rem;
+  &__category {
+    font-weight: 600;
+    font-size: 1.6rm;
+    line-height: 1.8rem;
+    color: #686868;
+    cursor: pointer;
+  }
+
+  &__size {
+    width: 5.4rem;
+    height: 3.2rem;
+    border: 1px solid var(--black);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__color-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__color {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  &__color-label {
+    margin-left: 1rem;
+  }
+
+  &__price-label {
+    color: var(--black);
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+}
